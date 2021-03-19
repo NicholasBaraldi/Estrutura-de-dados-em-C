@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Circular.h"
+#include "CircularHeader.h"
 
 struct lista_circular{
 	

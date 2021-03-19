@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "MeuLista.h"
+#include "ListaHeader.h"
 
 int main()
 {
@@ -21,11 +21,12 @@ int main()
 		printf("A lista nao esta vazia\n");
 	
 	if (buscar(lista, 20) == NULL)
-		printf("Não achou o numero 20 na lista");
+		printf("Não achou o numero 20 na lista\n\n");
 	else 
-		printf("achou o numero 20 na lista\n");
+		printf("achou o numero 20 na lista\n\n");
 	
 	lista = remover(lista, 40);
+	printf("Removido o numero 40 da lista:\n");
 	
 	imprimir_lista(lista);
 	printf("\n");
@@ -42,9 +43,9 @@ int main()
 	imprimir_lista(lista2);
 	
 	if (igual(lista, lista2) == 1)
-		printf("as listas sao iguais\n");
+		printf("\nAs listas sao iguais!\n");
 	else
-		printf("as listas sao diferente\n");
+		printf("\nAs listas sao diferente!\n");
 	
 return 0;
 }

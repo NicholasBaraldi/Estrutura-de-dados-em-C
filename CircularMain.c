@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Circular.h"
+#include "CircularHeader.h"
 struct lista_circular{
 	
 	int info;
@@ -27,11 +27,7 @@ int main(){
 	
 	imprimir_LC(lista);
 	
-	// lista = remover(lista, 2);
-	// 
-	// imprimir_LC(lista);
-
-	printf("escolha de quantas em quantas pessoas vc quer eliminar:\n");
+	printf("escolha de quantas em quantas pessoas voce quer eliminar:\n");
 	scanf("%d", &M);
 	
 	while (p->prox != p){
@@ -43,6 +39,6 @@ int main(){
 		imprimir_LC(lista);
 		p = lista;
 	}	
-	printf("results:\n");
+	printf("Resultado:\n");
 	imprimir_LC(lista);
 }

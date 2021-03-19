@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Pilha.h"
+#include "PilhaHeader.h"
 struct pilha{
 	
 	int info;
@@ -27,6 +27,7 @@ int main(){
 	
 	printf("escolha o numero que sera removido:\n");
 	scanf("%d", &M);
+	printf("\n");
 			
 	pilha = remover(pilha, &R);
 	

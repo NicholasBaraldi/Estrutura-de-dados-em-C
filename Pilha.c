@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Pilha.h"
+#include "PilhaHeader.h"
 
 struct pilha{
 	
@@ -27,10 +27,10 @@ Pilha *inserir_pilha(Pilha *l, int v){
 void imprimir_pilha(Pilha *l){
 	Pilha *p = l;
 	while(p->prox != NULL){
-		printf("%d, ", p->info);
+		printf("%d\n", p->info);
 		p = p->prox;
 	}
-	printf("%d \n", p->info);
+	printf("%d\n", p->info);
 	return;
 }
 
